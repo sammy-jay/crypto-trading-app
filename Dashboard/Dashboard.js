@@ -11,7 +11,7 @@ const Dashboard = () => {
      <div className="app">
        <SideBar/>
     <div className='dashboard'>
-      <NavBar/>
+      <NavBar location='Dashboard'/>
     <section className='topcards'>
       <DashboardTopCard positive percent={4} days={30} price='65,123' bgColor='#3793ff'/>
       <DashboardTopCard percent={47} days={30} price='15,333' bgColor='#5b5e81'/>

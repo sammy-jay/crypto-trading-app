@@ -6,7 +6,7 @@ const Wallet = () => {
     <div className='app'>
         <SideBar/>
         <div className='dashboard'>
-            <NavBar/>
+            <NavBar location='Wallet'/>
         </div>
     </div>
   )

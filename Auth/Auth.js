@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './Auth.css'
+import { Link } from 'react-router-dom'
 const Auth = () => {
     const [isSignUp, setIsSignUp] = useState(true)
 
@@ -25,15 +26,17 @@ const Auth = () => {
              <input type="checkbox" name="" id="" /> <span>Remember me</span>
              </div>
          )} */}
-         <button onClick={()=>setIsSignUp(!isSignUp)}>{isSignUp ? 'Create Account' : 'Sign In'}</button>
+         <Link to={`/dashboard`}>
+         <button >{isSignUp ? 'Create Account' : 'Sign In'}</button>
+         </Link>
             </article>
             {isSignUp ? (
                 <p>
-                    Already have an account? <span>Sign in here</span>
+                    Already have an account? <span className='underliner' onClick={()=>setIsSignUp(!isSignUp)}>Sign in here</span>
                 </p>
             ) : (
                 <p>
-                    Don't have an account? <span>Sign up here</span>
+                    Don't have an account? <span className='underliner' onClick={()=>setIsSignUp(!isSignUp)}>Sign up here</span>
                 </p>
             )}
         </section>

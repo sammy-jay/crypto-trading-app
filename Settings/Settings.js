@@ -6,7 +6,7 @@ const Settings = () => {
     <div className='app'>
         <SideBar/>
         <div className='dashboard'>
-            <NavBar/>
+            <NavBar location='Settings'/>
         </div>
     </div>
   )

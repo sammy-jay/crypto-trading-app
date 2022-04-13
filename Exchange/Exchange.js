@@ -6,7 +6,7 @@ const Exchange = () => {
     <div className='app'>
         <SideBar/>
         <div className='dashboard'>
-            <NavBar/>
+            <NavBar location='Exchange'/>
         </div>
     </div>
   )

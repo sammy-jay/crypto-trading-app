@@ -6,7 +6,7 @@ const MarketCap = () => {
     <div className='app'>
         <SideBar/>
         <div className='dashboard'>
-            <NavBar/>
+            <NavBar location='Market Cap'/>
         </div>
     </div>
   )

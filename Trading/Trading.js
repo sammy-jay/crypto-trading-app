@@ -6,7 +6,7 @@ const Trading = () => {
     <div className='app'>
         <SideBar/>
         <div className='dashboard'>
-            <NavBar/>
+            <NavBar location='Trading'/>
         </div>
     </div>
   )
